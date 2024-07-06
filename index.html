@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/af981cee3b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="banner">
+      <nav id="desktop-nav">
+        <img src="assets/logo.png" class="logo">
+      </nav>
+      <nav id="hamburger-nav">
+        <img src="assets/logo.png" class="logo">
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>            <span></span>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/icon4.png" alt="Elisa profile picture" class="picture"/>
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1"></p>
+          <h1 class="title">Elisa Nascimento</h1>
+          <p class="section__text__p2">Técnico em Eletrotécnica</p>
+          <div class="btn-container"> <br>
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/currículo_elisa.pdf')" >
+              Currículo 
+            </button>
+            <button 
+              class="btn btn-color-1" 
+              onclick="location.href='./#contact'">
+              Contatos
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="assets/whatsapp.png"
+              alt="Meu Whatsapp"
+              class="icon"
+              onclick="location.href='https://wa.me/5532988918324'"
+            /> 
+            <img
+              src="assets/instagram.png"
+              alt="Meu instagram"
+              class="icon"
+              onclick="location.href='https://instagram.com/nascelisa_'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1><br><br>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:elisanascimento507@gmail.com"
+            target="_blank">elisanascimento507@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+    <footer><br><br><br>
+      <p>Copyright &#169; 2024 Elisa Nascimento</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
